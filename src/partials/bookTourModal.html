@@ -1,0 +1,71 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="closeModal-button" data-modal-close>
+      <svg class="close-button__icon">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    
+      <h3 class="modal-tittle">Book a tour</h3>
+      <p class="modal-subTittle">
+        You can leave your application here </br> and our manager will call you </br>
+        within 10 minutes
+      </p>
+       <p class="modal-descSubTittle">
+        You can leave your application here  and</br> our manager will call you
+        within 10 minutes
+      </p>
+      <form class="modal-form">
+      <input class="modal__form-input" placeholder="Your name*" type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."/>
+      <input class="modal__form-input" placeholder="Phone number*" type="number" name="number" required/>
+
+      <ul class="checkbox-list">
+        <li class="checkbox-field">
+        <label class="checkbox-field__label">
+          <input
+            type="checkbox"
+            class="checkbox-field__input"
+            name="checkbox"
+            value="Ascent to Hoverla"
+          />
+          <svg class="checkbox-field__icon" width="16" height="15">
+            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+          </svg>
+          Ascent to Hoverla
+        </label>
+    </li>
+      <li class="checkbox-field">
+        <label class="checkbox-field__label">
+          <input
+            type="checkbox"
+            class="checkbox-field__input"
+            name="checkbox"
+            value="Ski tour to Bukovel"
+          />
+          <svg class="checkbox-field__icon" width="16" height="15">
+            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+          </svg>
+          Ski tour to Bukovel
+        </label>
+    </li>
+      <li class="checkbox-field">
+        <label class="checkbox-field__label">
+          <input
+            type="checkbox"
+            class="checkbox-field__input"
+            name="checkbox"
+            value="Week in Carpathians"
+          />
+          <svg class="checkbox-field__icon" width="16" height="15">
+            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+          </svg>
+          Week in Carpathians
+        </label>
+    </li></ul>
+      
+
+      <button type="submit" class="sendModal-button">CALL ME</button>
+    </form>
+  </div>
+</div>

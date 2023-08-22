@@ -1,0 +1,217 @@
+.reviews {
+  @extend %container;
+  padding-top: 52px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and(min-width:1440px) {
+    padding-top: 80px;
+    padding-right: 135px;
+    padding-left: 135px;
+  }
+}
+
+.reviews__tittle {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b1d1b;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 52px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 70px;
+    font-size: 68px;
+  }
+}
+
+.reviews__list {
+  @extend %list;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+.reviews__item {
+  width: 311px;
+  height: 452px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 504px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 377px;
+    height: 570px;
+  }
+}
+
+.reviews__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 134px;
+  background-position: center;
+  background-image: url(../images/reviewBgMob.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/reviewBgMob@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    background-image: url(../images/reviewBgTab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/reviewBgTab@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/reviewBgDesk.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/reviewBgDesk@2x.jpg);
+      }
+    }
+  }
+}
+
+.reviews__avatar-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 25%;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, 35%);
+
+  @media screen and (min-width: 1440px) {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+.reviews__info-wrapper {
+  position: relative;
+  padding: 110px 35px 48px 35px;
+
+  @media screen and (min-width: 768px) {
+    padding: 74px 20px 51px 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 83px 28px 103px 28px;
+  }
+}
+
+.reviews__card-tittle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #5b86a1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+  }
+}
+
+.reviews__card-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  color: #202321;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 3000;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  position: absolute;
+  border: 1px solid #5b86a1;
+  background-color: #f7fbfb;
+  transition: 2s;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  transition: 2s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.cards:hover .front {
+  transform: rotateY(180deg);
+}
+.cards:hover .back {
+  transform: rotateY(360deg);
+}
+
+.hidden {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}

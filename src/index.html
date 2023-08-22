@@ -2,13 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      width="60"
+      height="60"
+    />
+    <title>Carpathians</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <main>
+      <include src="./partials/header-mobile.html"></include>
+      <include src="./partials/mobileMenu.html"></include>
+      <include src="./partials/headerDesc.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/aboutUs.html"></include>
+      <include src="./partials/ourAdvantages.html"></include>
+      <include src="./partials/upcomingToursMob.html"></include>
+      <include src="./partials/upcomingToursTab.html"></include>
+      <include src="./partials/upcomingToursDesc.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/galleryMob.html"></include>
+      <include src="./partials/galleryTab.html"></include>
+      <include src="./partials/questions.html"></include>
+      <include src="./partials/bookTourModal.html"></include>
+      <include src="./partials/ascentToHoverla.html"></include>
+      <include src="./partials/skiTourToBukovel.html"></include>
+      <include src="./partials/weekInCarpathins.html"></include>
+    </main>
+    <!-- <include src="./partials/footer.html"></include> -->
   </body>
 </html>

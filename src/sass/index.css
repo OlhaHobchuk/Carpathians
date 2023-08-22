@@ -1,0 +1,454 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.upcomingTours__section, .ourAdvantages__section, .aboutUs__section, .hero__container, .menu_heder_container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 375px) {
+  .upcomingTours__section, .ourAdvantages__section, .aboutUs__section, .hero__container, .menu_heder_container {
+    width: 375px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .upcomingTours__section, .ourAdvantages__section, .aboutUs__section, .hero__container, .menu_heder_container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .upcomingTours__section, .ourAdvantages__section, .aboutUs__section, .hero__container, .menu_heder_container {
+    width: 1440px;
+  }
+}
+
+.footer__socialsWrapper, .footer__contactList {
+  list-style: none;
+}
+
+.menu_heder_container {
+  position: absolute;
+  width: 100%;
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-left: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .menu_heder_container {
+    display: none;
+  }
+}
+
+.open_mobile_button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #f7fbfb;
+  cursor: pointer;
+}
+
+.open_mobile_button_icon {
+  fill: currentColor;
+}
+
+.hero {
+  background-position: bottom;
+  background-image: url(../images/heroMob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/heroMob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: url(../images/heroTab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/heroTab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url(../images/heroDesk.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/heroDesk@2x.jpg);
+  }
+}
+
+.hero__container {
+  padding-top: 188px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 193px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7fbfb;
+}
+
+.hero__subtitle {
+  margin-top: 0;
+  margin-bottom: 88px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #f7fbfb;
+}
+
+.hero__button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 285px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #f7fbfb;
+  background-color: #5b86a1;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #1b1d1b;
+}
+
+.aboutUs__section {
+  padding-top: 52px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.aboutUs__tittle {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b1d1b;
+}
+
+.aboutUs__subtittle {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  color: #202321;
+}
+
+.ourAdvantages__section {
+  padding-top: 52px;
+}
+
+.ourAdvantages__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b1d1b;
+}
+
+.ourAdvantages__wrapper {
+  display: flex;
+  align-items: center;
+  width: 315px;
+  height: 554px;
+  background-image: url(../images/advantagesMob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .ourAdvantages__wrapper {
+    background-image: url(../images/advantagesMob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .ourAdvantages__wrapper {
+    max-width: 768px;
+    background-image: url(../images/advantagesMob.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .ourAdvantages__wrapper {
+    background-image: url(../images/advantagesMob@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .ourAdvantages__wrapper {
+    background-image: url(../images/advantagesMob.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .ourAdvantages__wrapper {
+    background-image: url(../images/advantagesMob@2x.jpg);
+  }
+}
+
+.ourAdvantages__list {
+  position: absolute;
+  z-index: 1000;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+
+.ourAdvantages__image {
+  z-index: 1;
+}
+
+.ourAdvantages__item {
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  gap: 8px;
+  width: 315px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7fbfb;
+  background-color: #5b86a1;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.upcomingTours__section {
+  padding-top: 52px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.upcomingTours__tittle {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b1d1b;
+}
+
+.upcomingTours__item {
+  border: 1px solid #5b86a1;
+  background: #f7fbfb;
+}
+
+.upcomingTours__imageWrapper {
+  width: 311px;
+  height: 338px;
+  overflow: hidden;
+}
+
+.upcomingTours__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.upcomingTours__infoWrapper {
+  padding: 28px 20px;
+}
+
+.upcomingTours__infoTittle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1b1d1b;
+}
+
+.upcomingTours__infoSubTittle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #202321;
+}
+
+.upcomingTours__infoButton {
+  display: flex;
+  width: 271px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #f7fbfb;
+  background-color: #5b86a1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.upcomingTours__infoButton:hover,
+.upcomingTours__infoButton:focus {
+  background-color: #1b1d1b;
+}
+
+.footer {
+  padding: 40px 44px;
+  background-color: #202321;
+}
+
+.footer__tittle {
+  margin-top: 0;
+  margin-bottom: 34px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7fbfb;
+}
+
+.footer__contactList {
+  padding: 0;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.footer__contactItem {
+  display: flex;
+}
+
+.footer__addInfo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer__contactLink {
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7fbfb;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer__contactLink-icon {
+  fill: currentColor;
+}
+
+.footer__contactLink:hover,
+.footer__contactLink:focus {
+  color: #5b86a1;
+}
+
+.footer__socialsWrapper {
+  margin-bottom: 40px;
+  padding: 0;
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.footer__socialsItem {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #202321;
+  color: #f7fbfb;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer__socialsItem-icon {
+  fill: currentColor;
+}
+
+.footer__socialsItem:hover,
+.footer__socialsItem:focus {
+  color: #5b86a1;
+}
+
+.footer__addInfo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #a3a5a3;
+}/*# sourceMappingURL=index.css.map */

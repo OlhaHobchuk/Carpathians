@@ -1,0 +1,23 @@
+.gallery__sectionMob {
+  @extend %container;
+  padding-left: 32px;
+  padding-top: 52px;
+  padding-right: 32px;
+  padding-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.gallery__tittleMob {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b1d1b;
+}

@@ -1,0 +1,120 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -233px;
+  width: 233px;
+  height: 100vh;
+  padding: 132px 32px 116px 32px;
+  background-color: rgba(32, 35, 33, 0.7);
+  z-index: 1001;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  @media screen and (min-width: 768px) {
+    left: -374px;
+    width: 374px;
+    padding: 184px 82px 184px 82px;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__logo-link {
+  position: absolute;
+  top: 20px;
+  left: 32px;
+  color: #f7fbfb;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    left: 82px;
+  }
+}
+
+.mobile-menu__logo {
+  fill: currentColor;
+}
+
+.mobile-menu__logo-link:hover,
+.mobile-menu__logo-link:focus {
+  color: #5b86a1;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu__nav-list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 0;
+}
+
+.mobile-menu__nav-link,
+.tablet-menu__nav-link {
+  text-decoration: none;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7fbfb;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mobile-menu__nav-link:hover,
+.mobile-menu__nav-link:focus,
+.tablet-menu__nav-link:hover,
+.tablet-menu__nav-link:focus {
+  color: #5b86a1;
+}
+
+.tablet-menu__nav {
+  margin-bottom: 80px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.tablet-menu__nav-list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-top: 0;
+}
+
+.mobile-menu__socials-list {
+  @extend %list;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.mobile-menu__socials-link {
+  color: #f7fbfb;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mobile-menu__socials-icon {
+  fill: currentColor;
+}
+
+.mobile-menu__socials-link:hover,
+.mobile-menu__socials-link:focus {
+  color: #5b86a1;
+}
